@@ -1,0 +1,4 @@
+hu/kuncystem/mydata/dao/user/UserDao.class
+hu/kuncystem/mydata/dao/config/PGConfig.class
+hu/kuncystem/mydata/dao/user/JDBCUserDao.class
+hu/kuncystem/mydata/dao/user/JDBCUserDao$1.class

@@ -1,0 +1,3 @@
+/home/kuncy88/git/MyData/mydata-dao/src/main/java/hu/kuncystem/mydata/dao/user/UserDao.java
+/home/kuncy88/git/MyData/mydata-dao/src/main/java/hu/kuncystem/mydata/dao/config/PGConfig.java
+/home/kuncy88/git/MyData/mydata-dao/src/main/java/hu/kuncystem/mydata/dao/user/JDBCUserDao.java
