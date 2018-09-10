@@ -1,5 +1,7 @@
 package hu.kuncystem.mydata.pojo.session;
 
+import java.util.Date;
+
 /**
  * Class Comment
  *
@@ -19,6 +21,8 @@ public class Session {
     private String userAgent;
     // This session is enabled or disabled
     private boolean disable;
+    
+    private Date createdDate;
 
     /**
      * This class will pass information to session dao object to get the data it
@@ -143,5 +147,19 @@ public class Session {
      */
     public void setUserId(long userId) {
         this.userId = userId;
+    }
+
+    /**
+     * @return the createdDate
+     */
+    public Date getCreatedDate() {
+        return createdDate;
+    }
+
+    /**
+     * @param createdDate the createdDate to set
+     */
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 }

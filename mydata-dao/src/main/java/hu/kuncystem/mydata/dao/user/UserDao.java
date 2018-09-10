@@ -23,5 +23,5 @@ public interface UserDao {
     
     public User getUser(long id);
     
-    public List<User> getUsers();
+    public List<User> getUsers(int limit, int offset, String order);
 }

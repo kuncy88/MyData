@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:21:41:39 +0200] "GET /mydata-webapp HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:21:41:40 +0200] "GET /mydata-webapp/ HTTP/1.1" 200 267 http-bio-8080-exec-3 909
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:21:41:41 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:21:41:43 +0200] "GET /mydata-webapp/ HTTP/1.1" 200 267 http-bio-8080-exec-5 2
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:21:42:00 +0200] "GET /mydata-webapp/ HTTP/1.1" 200 269 http-bio-8080-exec-6 85
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:21:43:43 +0200] "GET /mydata-webapp/ HTTP/1.1" 200 269 http-bio-8080-exec-1 103
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:21:45:56 +0200] "GET /mydata-webapp/ HTTP/1.1" 200 269 http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:21:45:58 +0200] "GET /mydata-webapp/ HTTP/1.1" 200 269 http-bio-8080-exec-6 1
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:22:09:27 +0200] "GET /mydata-webapp/ HTTP/1.1" 200 269 http-bio-8080-exec-1 112
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:22:09:29 +0200] "GET /mydata-webapp/ HTTP/1.1" 200 269 http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [10/Sep/2018:22:09:29 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0

@@ -131,8 +131,12 @@ public class JDBCUserDao implements UserDao {
      * @see hu.kuncystem.mydata.dao.user.UserDao#getUser(long)
      */
     public User getUser(long id) {
-        // TODO Auto-generated method stub
-        return null;
+        String sql = SQL_SELECT.replace("$CONDITION$", " u.id = ?");
+        try {
+            return jdbc.queryForObject(sql, new UserMapper(), id);
+        } catch (EmptyResultDataAccessException e) {
+            return null;
+        }
     }
 
     /*
@@ -140,9 +144,22 @@ public class JDBCUserDao implements UserDao {
      * 
      * @see hu.kuncystem.mydata.dao.user.UserDao#getUsers()
      */
-    public List<User> getUsers() {
-        // TODO Auto-generated method stub
-        return null;
+    public List<User> getUsers(int limit, int offset, String order) {
+        String sql = SQL_SELECT;
+        if (order != null) {
+            sql += " ORDER BY " + order;
+        }
+        if (limit > -1) {
+            sql += " LIMIT " + limit;
+        }
+        if (offset > -1) {
+            sql += " OFFSET " + offset;
+        }
+        try {
+            return jdbc.query(sql, new UserMapper());
+        } catch(Exception e) {
+            return null;
+        }
     }
 
 }
